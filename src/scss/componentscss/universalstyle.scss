@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: 'Archivo', sans-serif;
+  font-family: 'Sora', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  }
+
+h1{
+    @include heading_one;
+  }
+
+  h2{
+    @include heading_two;
+  }
+
+  p{
+    @include paragraph;  
+  }

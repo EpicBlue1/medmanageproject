@@ -1,0 +1,22 @@
+//background-images
+@mixin background_images {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+//Headings and text
+@mixin heading_one {
+    font-size: 48px !important;
+    font-weight: 700 !important;
+  }
+
+@mixin heading_two {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+  }
+
+@mixin paragraph {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+  }
