@@ -1,0 +1,35 @@
+//Navigation
+.NavigationBar{
+    width: 100px;
+    height: 85vh;
+    background-color: $primary_lightblue;
+    position: fixed;
+    top: 7%;
+    left: 1.5%;
+    border-radius: 50px;
+}
+
+.Welcome_Section{
+    padding-top: 13vh;
+    padding-left: 21vh !important;
+    height:55vh;
+    color: white;
+}
+
+.Calendar_Section{
+    padding-top: 5vh;
+    height:55vh;
+}
+
+.Calendar{
+    width: 93%;
+    height: 70%;
+}
+
+.TodayApp_Section{
+    padding-left: 10vh !important;
+    height:35vh;
+}
+
+
+
