@@ -1,8 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import RoundedShape from '../img/roundeddashshape.svg';
-import Temp from '../img/TempCal.png';
+import RoundedShape from '../img/roundeddashshape.png';
 import Navbar from './subcomponents/Nav.js';
+import SearchBar from './subcomponents/searchBar';
+import Timeslots from './subcomponents/timeSlot';
+import AppToday from './subcomponents/AppToday';
+import AppWeek from './subcomponents/AppWeek';
+import PlusIcon from '../img/plusButton.svg';
 
 const Dash = () => {
     return (
@@ -11,16 +15,73 @@ const Dash = () => {
                 <Col md={1}>
                     <Navbar/>
                 </Col>
-                <Col md={8} style={{ backgroundImage: 'url(' + RoundedShape + ')', backgroundSize: 'contain', backgroundPosition: '-45px 40%', backgroundRepeat: 'no-repeat'}} className="Welcome_Section">
+                <Col md={6} style={{ backgroundImage: 'url(' + RoundedShape + ')', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} className="Welcome_Section">
                     <h1>Welcome Dave</h1><p>lorem ipsum dolor sit amet, consectetur adip</p>
                 </Col>
-                <Col md={3} className="Calendar_Section">
-                    <h1>Calendar</h1>
-                    <div style={{ backgroundImage: 'url(' + Temp + ')', backgroundSize: 'contain', backgroundPosition: '-45px 40%', backgroundRepeat: 'no-repeat'}} className="Calendar"></div>
+                <Col md={5} className="WeekApp_Section">
+                    <div className="WeekApp borderRad">
+                        <h2>This Weeks Appointments</h2>
+                        {/* Holds all the appointments from this week */}
+                        <div className="AppsWeek">
+                            <div className="overflow">
+                                <AppWeek/>
+                                <AppWeek/>
+                                <AppWeek/>
+                                <AppWeek/>
+                                <AppWeek/>
+                                <AppWeek/>
+                                <AppWeek/>
+                                <AppWeek/>
+                                <AppWeek/>
+                                <AppWeek/>
+                                <AppWeek/>
+                            </div>
+                        </div>
+                    </div>
                 </Col>
             </Row>
             <Row>
-                <Col md={{span:8, offset: 1}} className="TodayApp_Section"><h2>Todays Appointments</h2></Col>
+                <Col className="TodaySearch" md={{span:4, offset: 1}}>
+                    <h3>Search</h3>
+                    <SearchBar/>
+                </Col>
+                <Col className="TodaySearch" md={7}>
+                    <h3>Timeslots open today</h3>
+                    <Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/>
+                </Col>
+            </Row>
+            <Row>
+                <Col md={{span:8, offset: 1}} className="TodayApp_Section"><h2>Todays Appointments</h2>
+                <div className="AppTodayH">
+                    <div className="AppointmentH">
+                        <ul>
+                            <li>Name</li>
+                            <li>Doctor</li>
+                            <li>Time</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="overflow">
+                    <AppToday/>
+                    <AppToday/>
+                    <AppToday/>
+                    <AppToday/>
+                    <AppToday/>
+                    <AppToday/>
+                    <AppToday/>
+                    <AppToday/>
+                    <AppToday/>
+                    <AppToday/>
+                    <AppToday/>
+                </div>
+                </Col>
+                <Col md={3} className="TodayApp_Section">
+                    <div className="createApp borderRad">
+                        <h2>Create Appointment</h2>
+                        <button style={{ backgroundImage: 'url(' + PlusIcon + ')', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} className="plusIcon"></button>
+                    </div>
+                </Col>
             </Row>
         </>
     );

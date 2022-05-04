@@ -11,12 +11,26 @@
     font-weight: 750 !important;
   }
 
-@mixin heading_two {
-    font-size: 24px !important;
+@mixin heading_twoBold {
+    font-size: 28px !important;
     font-weight: 650 !important;
   }
 
+@mixin heading_two {
+    font-size: 28px !important;
+  }
+
+@mixin heading_three {
+    font-size: 22px !important;
+  }
+
 @mixin paragraph {
-    font-size: 16px !important;
+    font-size: 14px !important;
     font-weight: 400 !important;
+  }
+
+//uniform border radiuses
+
+@mixin borders{
+    border-radius: 25px;
   }
