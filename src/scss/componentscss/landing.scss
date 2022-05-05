@@ -9,6 +9,11 @@
     border-radius: 55px;
 }
 
+.NavImg{
+    Width: 85px;
+    height: 85px;
+}
+
 .Welcome_Section{
     padding-top: 10vh;
     padding-left: 12vh !important;
@@ -23,9 +28,8 @@
 
 .WeekApp{
     padding-top: 4%;
-    margin-left: 15% !important;
     text-align: center;
-    width: 80%;
+    width: 90%;
     height: 90%;
 }
 
@@ -56,6 +60,7 @@
 .AppointmentH{
     padding-top:0.5%;
     height: 30px;
+    font-weight: bold;
   }
 
 .AppToday li{
@@ -78,6 +83,7 @@
 }
 
 .createApp{
+    margin-top: 4%;
     width: 90%;
     height: 300px;
     background-color: $primary_lightblue;
