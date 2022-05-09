@@ -16,9 +16,9 @@
 
 .Welcome_Section{
     padding-top: 10vh;
-    padding-left: 12vh !important;
+    padding-left: 2vh !important;
     height:48vh;
-    color: white;
+    color: black;
 }
 
 .WeekApp_Section{
@@ -83,23 +83,21 @@
 }
 
 .createApp{
-    margin-top: 4%;
-    width: 90%;
-    height: 300px;
+    margin-top: 13%;
+    width: 100% !important;
+    height: 85px;
     background-color: $primary_lightblue;
 }
 
-.createApp h2{
+.createApp h3{
     text-align: center;
-    padding-top: 4%;
     color: white;
 }
 
 .plusIcon{
-    margin-left: 38% !important;
-    margin-top: 25% !important;
-    width: 70px;
-    height: 70px;
+    margin-left: 46% !important;
+    width: 45px;
+    height: 45px;
     background-color: $primary_lightblue;
     border: none;
 }

@@ -13,6 +13,7 @@ const Dash = () => {
         <>
             <Row>
                 <Col md={1}>
+                    <Navbar/>
                 </Col>
                 <Col md={6} style={{ backgroundImage: 'url(' + RoundedShape + ')', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} className="Welcome_Section">
                     <h1>Welcome Dave</h1><p>lorem ipsum dolor sit amet, consectetur adip</p>
@@ -30,17 +31,7 @@ const Dash = () => {
                         {/* Holds all the appointments from this week */}
                         <div className="AppsWeek">
                             <div className="overflow">
-                                <AppWeek/>
-                                <AppWeek/>
-                                <AppWeek/>
-                                <AppWeek/>
-                                <AppWeek/>
-                                <AppWeek/>
-                                <AppWeek/>
-                                <AppWeek/>
-                                <AppWeek/>
-                                <AppWeek/>
-                                <AppWeek/>
+
                             </div>
                         </div>
                     </div>
@@ -73,17 +64,7 @@ const Dash = () => {
                 <hr></hr>
 
                 <div className="overflow">
-                    <AppToday/>
-                    <AppToday/>
-                    <AppToday/>
-                    <AppToday/>
-                    <AppToday/>
-                    <AppToday/>
-                    <AppToday/>
-                    <AppToday/>
-                    <AppToday/>
-                    <AppToday/>
-                    <AppToday/>
+
                 </div>
                 </Col>
             </Row>
