@@ -16,8 +16,8 @@ function App() {
 
     <Routes>
       <Route path="/" element={<Dashboard />}></Route>
-      <Route path="/AstroidGraphs" element={<PatientPage />} ></Route>
-      <Route path="/Timeline" element={<DoctorsPage />} ></Route>
+      <Route path="/PatientPage" element={<PatientPage />} ></Route>
+      <Route path="/DoctorsPage" element={<DoctorsPage />} ></Route>
     </Routes>
     
     </Container>

@@ -1,0 +1,42 @@
+.PatData{
+    margin-top: 4%;
+    width: 33.33%;
+    font-weight: bold !important;
+}
+
+.height{
+    height: 35px !important;
+}
+
+.patientCard{
+    margin-right: 1%;
+    padding: 1%;
+    width: 23%;
+    height: max-content;
+    background-color: #fff !important;
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
+}
+
+.patImg{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 55px;
+}
+
+.tel{
+    text-align: center;
+    width: 38%;
+    margin-top: 13%;
+}
+
+.EditButton{
+    margin-left: 10% !important;
+    width: 125px;
+    height: 35px;
+    border: none !important;
+    background-color: $secondary_greenish;
+}
+
+.patName{
+    padding-left: 10%;
+}
