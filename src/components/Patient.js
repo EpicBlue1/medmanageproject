@@ -2,9 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import SearchBar from './subcomponents/searchBar';
 import PatCard from './subcomponents/patientCard';
+import PlusIcon from '../img/plusButton.svg';
 
-
-const Dash = () => {
+const PatientP = () => {
     return (
         <>
             <Row>
@@ -19,10 +19,15 @@ const Dash = () => {
                     <h3>Search</h3>
                     <SearchBar/>
                 </Col>
-                <Col className="TodaySearch" md={7}>
+                <Col className="TodaySearch" md={3}>
                     <div className="PatData Inline">Registered Patients: </div>
-                    <div className="PatData Inline">DataTwo: </div>
-                    <div className="PatData Inline">DataThree: </div>
+                    <div className="PatData Inline">DataOne: </div>
+                </Col>
+                <Col className="TodaySearch" md={4}>
+                    <div className="addDoc borderRad">
+                        <h3>Add Patient</h3>
+                        <button style={{ backgroundImage: 'url(' + PlusIcon + ')', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} className="plusIconD"></button>
+                    </div>
                 </Col>
             </Row>
             <Row>
@@ -54,4 +59,4 @@ const Dash = () => {
     );
 };
 
-export default Dash;
+export default PatientP;

@@ -1,6 +1,6 @@
 .PatData{
-    margin-top: 4%;
-    width: 33.33%;
+    margin-top: 42px;
+    width: 50%;
     font-weight: bold !important;
 }
 
@@ -25,12 +25,13 @@
 
 .tel{
     text-align: center;
-    width: 38%;
-    margin-top: 13%;
+    width: 50%;
+    height: 10px;
+    margin-top: 7%;
 }
 
 .EditButton{
-    margin-left: 10% !important;
+    margin-left: 12% !important;
     width: 125px;
     height: 35px;
     border: none !important;
@@ -39,4 +40,11 @@
 
 .patName{
     padding-left: 10%;
+}
+
+.addPerson{
+    margin-top: 1px !important;
+    width: 15%;
+    height: 35px;
+    background-color: $secondary_greenish;
 }
