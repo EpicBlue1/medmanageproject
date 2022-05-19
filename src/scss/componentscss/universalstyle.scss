@@ -9,13 +9,12 @@ body {
 
   //Navigation
 .NavigationBar{
-  width: 85px;
-  height: 85vh;
+  display: block;
+  width: 16vh !important;
+  height: 100%;
   background-color: $primary_lightblue;
+  left: 0;
   position: fixed;
-  top: 7%;
-  left: 1.5%;
-  border-radius: 55px;
   box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
 }
 
@@ -34,6 +33,15 @@ body {
   height: 55px;
   margin: 0 auto;
   margin-top: 6vh;
+}
+
+@media (max-width: 480px) {
+  .NavigationBar{
+    display: none;
+    width: 10vh;
+    background-color: #f2f2f200;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0);
+  }
 }
 
   h1{
@@ -128,3 +136,16 @@ li{
   color: white !important;
   margin-right: 5%;
 }
+
+@media (max-width: 420px) { 
+  .SelectStyle{
+    padding-left: 2%;
+    width: 35%;
+    height: 35px !important;
+    border: none !important;
+    background-color: $secondary_greenish;
+    font-weight: bold;
+    color: white !important;
+    margin-right: 5%;
+  }
+ }

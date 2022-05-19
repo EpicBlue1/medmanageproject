@@ -47,12 +47,20 @@ const PatientP = () => {
                     </select>
                         <hr></hr>
 
-                    <div className="overflow">
+                    <Row className="overflow">
                         <PatCard/>
                         <PatCard/>
                         <PatCard/>
                         <PatCard/>
-                    </div>
+                        <PatCard/>
+                        <PatCard/>
+                        <PatCard/>
+                        <PatCard/>
+                        <PatCard/>
+                        <PatCard/>
+                        <PatCard/>
+                        <PatCard/>
+                    </Row>
                 </Col>
             </Row>
         </>

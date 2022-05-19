@@ -25,7 +25,9 @@
   }
 
 @mixin heading_four {
-  font-size: 18px !important;
+  font-size: 12px !important;
+  color: #6b6b6b;
+  height: 6px;
 }
 
 @mixin paragraph {

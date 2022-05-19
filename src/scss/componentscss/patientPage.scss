@@ -8,43 +8,76 @@
     height: 35px !important;
 }
 
-.patientCard{
-    margin-right: 1%;
-    padding: 1%;
-    width: 23%;
-    height: max-content;
-    background-color: #fff !important;
-    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
-}
-
-.patImg{
-    width: 10vh;
-    height: 10vh;
-    border-radius: 55px;
-}
-
-.tel{
-    text-align: center;
-    width: 50%;
-    height: 10px;
-    margin-top: 7%;
-}
-
-.EditButton{
-    margin-left: 12% !important;
-    width: 125px;
-    height: 35px;
-    border: none !important;
-    background-color: $secondary_greenish;
-}
-
-.patName{
-    padding-left: 10%;
-}
-
 .addPerson{
     margin-top: 1px !important;
     width: 15%;
     height: 35px;
     background-color: $secondary_greenish;
 }
+
+.patientCard{
+    height: 300px !important;
+    border-radius: 5px !important;
+    margin-bottom: 1%;
+}
+
+.patientCardi{
+    background-color: white !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px !important;
+}
+
+.TopStyle{
+    height: 100px !important;
+}
+
+.editBut{
+    width: 30px;
+    height: 30px;
+    float: right !important;
+    margin-top: 10% !important;
+}
+
+.TopStyleImg{
+    margin-top: 10%;
+    width: 85px !important;
+    height: 85px !important;
+    border-radius: 100px !important;
+}
+
+.BotStyle{
+    height: 40px !important;
+}
+
+@media (max-width: 420px) { 
+    .patientCard{
+        margin-top: 0 !important;
+        height: 100px !important;
+        border-radius: 5px !important;
+        margin-bottom: 1%;
+    }
+    .TopStyle{
+        height: 45px !important;    
+    }
+
+    h4{
+        display: none;
+    }
+    
+    .BotStyle{
+        height: 20px !important;
+    }
+    .TopStyleImg{
+        margin-top: 10%;
+        width: 35px !important;
+        height: 35px !important;
+        border-radius: 100px !important;
+    }
+    .editBut{
+        width: 30px;
+        height: 30px;
+        float: right !important;
+        margin-top: 2% !important;
+    }
+ }
