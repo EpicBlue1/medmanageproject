@@ -13,7 +13,6 @@ const navBar = () => {
     return (
         <div className="NavigationBar">
             <div style={{ backgroundImage: 'url(' + NavImg + ')', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} className="NavImg"></div>
-
             <div className="SubNavigation">
             <Link to="/"><p>Home</p></Link>
             <Link to="/PatientPage"><p>Doctors</p></Link>

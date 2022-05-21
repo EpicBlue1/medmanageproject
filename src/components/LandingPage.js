@@ -7,8 +7,16 @@ import Timeslots from './subcomponents/timeSlot';
 import AppToday from './subcomponents/AppToday';
 import AppWeek from './subcomponents/AppWeek';
 import PlusIcon from '../img/plusButton.svg';
+import {AnimatePresence, motion} from 'framer-motion';
+import Modal from './subcomponents/modal';
+import {useState} from 'react';
 
 const Dash = () => {
+
+    const [modalOpen, setmodalOpen] = useState(false);
+    const close = () => setmodalOpen(false);
+    const open = () => setmodalOpen(true); 
+
     return (
         <>
             <Row>
@@ -19,7 +27,15 @@ const Dash = () => {
                     
                     <div className="createApp borderRad">
                         <h3>Create Appointment</h3>
-                        <button style={{ backgroundImage: 'url(' + PlusIcon + ')', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} className="plusIcon"></button>
+                    <motion.button 
+                        onClick={() => (modalOpen ? close() : open())} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}
+                        style={{ backgroundImage: 'url(' + PlusIcon + ')', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}
+                        className="plusIcon">
+                    </motion.button>
+
+                    <AnimatePresence initial={false} exitBeforeClose={true}>
+                        {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+                    </AnimatePresence>
                     </div>
                 </Col>
                 <Col md={5} className="WeekApp_Section">

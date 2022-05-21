@@ -35,6 +35,25 @@ body {
   margin-top: 6vh;
 }
 
+.backdrop{
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  background: #000000e1;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.modal{
+  width: clamp(50%, 700px, 90%) !important;
+  height: min(50%, 300px) !important;
+  margin: auto !important;
+  background-color: aqua;
+}
+
 @media (max-width: 480px) {
   .NavigationBar{
     display: none;
