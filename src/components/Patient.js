@@ -3,13 +3,15 @@ import { Container, Row, Col } from 'react-bootstrap';
 import SearchBar from './subcomponents/searchBar';
 import PatCard from './subcomponents/patientCard';
 import PlusIcon from '../img/plusButton.svg';
+import Navbar from './subcomponents/Nav';
 
 const PatientP = () => {
     return (
         <>
             <Row>
-                <Col md={1}>
-                </Col>
+            <Col md={1}>
+                <Navbar/>
+            </Col>
             </Row>
             <Row className='height'>
 

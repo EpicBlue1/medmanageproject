@@ -18,26 +18,56 @@ code {
   display: block;
   width: 16vh !important;
   height: 100%;
-  background-color: $primary_lightblue;
+  background-color: white;
   left: 0;
   position: fixed;
   box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
 }
 
+.NavigationBar h4{
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
 .SubNavigation{
-  padding-top: 8vh;
+  padding-top: 20vh;
   height: 60vh;
 }
 
 .NavImg{
   Width: 85px;
   height: 85px;
+  border-radius: 55px;
+  border-top: 2px solid $secondary_greenish;
+  border-left: 2px solid $secondary_greenish;
+  border-bottom:none;
+  border-right:none;
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
 }
 
 .NavIc{
   Width: 55px;
   height: 55px;
   margin-top: 6vh;
+}
+
+.navItem{
+  margin-bottom: 50px;
+  padding-top: 6px;
+  text-align: center;
+  height: 35px;
+  width: 90%;
+  border-top: none;
+  // border-left: 4px solid black;
+  border-bottom:none;
+  border-right:none;
+}
+
+.navItem:hover{
+  border-top: none;
+  border-left: 4px solid $secondary_greenish;
+  border-bottom:none;
+  border-right:none;
 }
 
 .backdrop{
@@ -102,8 +132,14 @@ code {
   height: 40px;
   width: 99%;
   margin-bottom: 1.5vh;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: none;
   @include paragraph;
+}
+
+input{
+  border: none;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .Search{
@@ -114,15 +150,23 @@ code {
 
 .timeSlot{
   display: inline-block;
-  background-color: $secondary_greenish;
+  background-color: white;
   height: 40px;
   width: 11%;
   margin-right: 1%;
   border-radius: 10px;
-  color: white;
+  // border: 3px solid $secondary_greenish;
+  color: black;
   padding-top: 1%;
   text-align: center;
   @include paragraph;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.timeSlot:hover{
+display: inline-block;
+  background-color: white;
 }
 
 li{
@@ -166,6 +210,12 @@ li{
   color: white !important;
   margin-right: 5%;
 }
+
+a{
+  text-decoration: none !important;
+  color: black !important;
+}
+
 
 @media (max-width: 420px) { 
   .SelectStyle{

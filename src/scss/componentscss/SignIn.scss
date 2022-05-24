@@ -1,0 +1,104 @@
+.background{
+    background-color: #f2f2f2 !important;
+    background-image: linear-gradient(to top, rgba(242, 242, 242, 0.8), rgba(242, 242, 242, 1) 50%), url('../../img/background.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    height: 100vh !important;
+    padding-top: 1px
+}
+
+.SignIn{
+    padding-top: 2% !important;
+    margin: 0 auto !important;
+    margin-top: 8% !important;
+    height: max-content;
+    width: 400px;
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
+    background-color: white !important;
+}
+
+.SignIn h2{
+    margin-bottom: 8%;
+    text-align: center;
+}
+
+.FormImg{
+    margin: 0 auto !important;
+    margin-bottom: 5% !important;
+    width: 90px;
+    height: 90px;
+}
+
+.SignInputs{
+    float: left;
+    margin-left: 6% !important;
+    margin-bottom: 7% !important;
+    width: 80%;
+    height: 35px;
+    border: none !important;
+    padding-left: 2%;
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
+}
+
+.SignInputsE{
+    float: left;
+    margin-left: 6% !important;
+    margin-bottom: 7% !important;
+    width: 89%;
+    height: 35px;
+    border: none !important;
+    padding-left: 2%;
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
+}
+
+.icon{
+    float: left;
+    width: 35px;
+    height: 35px;
+    padding: 10px !important;
+    background-image: url(../../img/icons8-closed-eye-96.png);
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
+    background-color: white !important;
+    cursor: pointer;
+}
+
+.icon:hover{
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.1);
+    background-color: white !important
+}
+
+.SignButton{
+    margin-top: 5%;
+    margin-left: 30% !important;
+    margin-bottom: 10% !important;
+    width: 150px;
+    height: 35px;
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
+    border-radius: 25px;
+    background-color: $primary_lightblue;
+    border: none;
+}
+
+.logOut{
+    margin-top: 100%;
+    margin-bottom: 10% !important;
+    width: 99%;
+    height: 35px;
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
+    border-radius: 25px;
+    background-color: $primary_lightblue;
+    border: none;
+    text-align: center;
+    // padding-top: 5px;
+}
+
+@media (max-width: 480px) {
+    .SignIn{
+        margin: 0 auto !important;
+        margin-top: 35% !important;
+        height: max-content;
+        width: 90%;
+    }
+  }

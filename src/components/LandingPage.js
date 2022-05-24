@@ -11,6 +11,7 @@ import {AnimatePresence, motion} from 'framer-motion';
 import Modal from './subcomponents/modal';
 import {useState} from 'react';
 
+
 const Dash = () => {
 
     const [modalOpen, setmodalOpen] = useState(false);
@@ -19,6 +20,9 @@ const Dash = () => {
 
     return (
         <>
+            <Col md={1}>
+                <Navbar/>
+            </Col>
             <Row>
                 <Col md={1}>
                 </Col>
@@ -28,8 +32,7 @@ const Dash = () => {
                     <div className="createApp borderRad">
                         <h3>Create Appointment</h3>
                         <div class="Container">
-                            <motion.button className="big-button save-button" onClick={() => (modalOpen ? close() : open())} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
-                                Launch Modal
+                            <motion.button className="plusIcon" onClick={() => (modalOpen ? close() : open())} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
                             </motion.button>
                     
                             <AnimatePresence initial={false} exitBeforeClose={true}>
