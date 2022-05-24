@@ -27,15 +27,21 @@ const Dash = () => {
                     
                     <div className="createApp borderRad">
                         <h3>Create Appointment</h3>
-                    <motion.button 
+                        <div class="Container">
+                            <motion.button className="big-button save-button" onClick={() => (modalOpen ? close() : open())} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
+                                Launch Modal
+                            </motion.button>
+                    
+                            <AnimatePresence initial={false} exitBeforeClose={true}>
+                                {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+                            </AnimatePresence>
+                        </div>
+
+                    {/* <motion.button 
                         onClick={() => (modalOpen ? close() : open())} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}
                         style={{ backgroundImage: 'url(' + PlusIcon + ')', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}
                         className="plusIcon">
-                    </motion.button>
-
-                    <AnimatePresence initial={false} exitBeforeClose={true}>
-                        {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
-                    </AnimatePresence>
+                    </motion.button> */}
                     </div>
                 </Col>
                 <Col md={5} className="WeekApp_Section">
@@ -102,6 +108,9 @@ const Dash = () => {
                     <AppToday/>
                 </div>
                 </Col>
+            <AnimatePresence initial={false} exitBeforeClose={true}>
+                {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+            </AnimatePresence>
             </Row>
         </>
     );

@@ -47,12 +47,12 @@ const Doc = () => {
                     </select>
                         <hr></hr>
 
-                    <div className="overflow">
+                    <Row className="overflow">
                         <DocCard/>
                         <DocCard/>
                         <DocCard/>
                         <DocCard/>
-                    </div>
+                    </Row>
                 </Col>
             </Row>
         </>

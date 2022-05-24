@@ -9,7 +9,7 @@ const dropIn ={
             duration: 0.1,
             type: "spring",
             damping: 25,
-            stiffness: 250,
+            stiffness: 500,
         }
     },
     visible: {
@@ -17,7 +17,7 @@ const dropIn ={
         opacity: 1,
     },
     exit: {
-        y: "100vh",
+        y: "-100vh",
         opacity: 0,
     },
 }
@@ -26,7 +26,7 @@ const Modal = ({handleClose, text}) => {
     return(
         <Backdrop className="backdrop" onClick={handleClose} initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
 
-            <motion.div onClick={(e) => e.stopPropagation()} className="modal" variants={dropIn} initial="hidden" animate="visible" exit="exit">
+            <motion.div onClick={(e) => e.stopPropagation()} className="modal borderRad" variants={dropIn} initial="hidden" animate="visible" exit="exit">
                 <p>{text}</p>
                 <button onClick={handleClose}>Close</button>
             </motion.div>
