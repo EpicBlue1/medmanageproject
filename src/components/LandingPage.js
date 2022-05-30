@@ -24,10 +24,24 @@ const Dash = () => {
                 <Navbar/>
             </Col>
             <Row>
+                <Col className="TodaySearch" md={{span:4, offset: 1}}>
+                <br></br>
+                    <h3>Search</h3>
+                    <SearchBar/>
+                </Col>
+                <Col className="TodaySearch" md={7}>
+                <br></br>
+                    <h3>Timeslots open today</h3>
+                    <Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/>
+                </Col>
+            </Row>
+            <Row>
                 <Col md={1}>
                 </Col>
-                <Col md={6} style={{ backgroundImage: 'url(' + RoundedShape + ')', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} className="Welcome_Section">
-                    <h1>Welcome Dave</h1><p>lorem ipsum dolor sit amet, consectetur adip</p>
+                <Col md={7} className="Welcome_Section">
+                    <div className="Welcome_subSection">
+                        <h1>Welcome Dave</h1><p>lorem ipsum dolor sit amet, consectetur adip</p>
+                    </div>
                     
                     <div className="createApp borderRad">
                         <h3>Create Appointment</h3>
@@ -47,7 +61,7 @@ const Dash = () => {
                     </motion.button> */}
                     </div>
                 </Col>
-                <Col md={5} className="WeekApp_Section">
+                <Col md={4} className="WeekApp_Section">
                     <div className="WeekApp borderRad">
                         <h2>This Weeks Appointments</h2>
                         <hr></hr>
@@ -71,16 +85,7 @@ const Dash = () => {
                     </div>
                 </Col>
             </Row>
-            <Row>
-                <Col className="TodaySearch" md={{span:4, offset: 1}}>
-                    <h3>Search</h3>
-                    <SearchBar/>
-                </Col>
-                <Col className="TodaySearch" md={7}>
-                    <h3>Timeslots open today</h3>
-                    <Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/><Timeslots/>
-                </Col>
-            </Row>
+
             <Row>
                 <Col md={{span:11, offset: 1}} className="TodayApp_Section">
                     <h2>Todays Appointments</h2>
